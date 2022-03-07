@@ -1,10 +1,18 @@
 import React from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, Button } from "react-native";
 
-const ComponentsScreen = () => {
+const ComponentsScreen = (props) => {
   return (
     <View>
-      <Text style={styles.textStyle}>Dado zmaj</Text>
+      <Text style={styles.textStyle}>Bobo zmaj</Text>
+      <Button
+        title="return to home"
+        onPress={() => props.navigation.navigate("Home")}
+      />
+      <Button
+        title="go to ListScreen"
+        onPress={() => props.navigation.navigate("List")}
+      />
     </View>
   );
 };
