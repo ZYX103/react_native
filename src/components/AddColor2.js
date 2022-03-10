@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
-const AddColor2 = ({ color }) => {
+const AddColor2 = ({ color, increase, decrease }) => {
   return (
     <View>
-      <Text>{color}</Text>
-      <Button title={`Increase ${color}`} />
-      <Button title={`Decrease ${color}`} />
+      <Text style={{ backgroundColor: color }}>{color}</Text>
+      <Button title={`Increase ${color}`} onPress={() => increase()} />
+      <Button title={`Decrease ${color}`} onPress={() => decrease()} />
     </View>
   );
 };

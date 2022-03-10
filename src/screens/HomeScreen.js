@@ -2,6 +2,7 @@ import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 import AddColor from "../components/AddColor";
 import Counters from "../components/Counters";
+import Counters2 from "../components/Counters2";
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -26,7 +27,7 @@ const HomeScreen = ({ navigation }) => {
         title="Go to Square screen"
         onPress={() => navigation.navigate("SquareScreen")}
       />
-      <Counters></Counters>
+      <Counters2></Counters2>
     </View>
   );
 };
